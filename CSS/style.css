@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/* --Tonos posibles para fondos-- */
+/* --Tonos textos/decoración-- */
+/* --Posibles fuentes-- */
+/* ---------PRINCIPAL------- */
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div.ancla {
+  background-color: #eb5e28;
+  height: 1em;
+  text-align: start;
+}
+
+div.ancla2 {
+  background-color: #eb5e28;
+  height: 1em;
+  text-align: end;
+}
+
+.ancla a,
+.ancla2 a {
+  text-decoration: none;
+  color: #f0ebd8;
+  font-size: 15px;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+.contenedor-principal {
+  height: 95vh;
+  padding: 43px;
+}
+
+/* --------MENU SUPERIOR------- */
+nav.desplegable {
+  background-color: #ccc5b9;
+  color: #eb5e28;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 90px 20px 20px;
+  height: 15vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.desplegable ul {
+  list-style: none;
+}
+
+.menu-desplegable {
+  width: 350px;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-interior {
+  background-color: #ef7b45;
+  font-size: 15px;
+  border: 3px solid black;
+  visibility: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.menu-interior li {
+  padding: 3px;
+  border-bottom: 2px solid black;
+}
+
+.menu-interior a {
+  text-decoration: none;
+  color: #252422;
+}
+
+/* --------MAIN/INFO PRINCIPAL------- */
+main {
+  background-color: #403d39;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main div.texto-principal {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+main h1 {
+  color: #eb5e28;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+main p {
+  font-family: "Heebo", sans-serif;
+  color: #f0ebd8;
+  font-size: 20px;
+}
+
+main figure img {
+  width: 60vh;
+  border-style: ridge;
+  border-color: #eb5e28;
+}
+
+/* -------INFORMACION GENERAL-------- */
+.informacion p,
+.informacion2 p {
+  margin: 0;
+  height: 10vh;
+}
+
+.informacion {
+  color: #252422;
+  background-color: #ccc5b9;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Heebo", sans-serif;
+  padding-top: 5px;
+}
+
+.informacion2 {
+  color: #252422;
+  background-color: #ccc5b9;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Heebo", sans-serif;
+  padding-top: 5px;
+}
+
+/* ------CARDS------ */
+article {
+  background-color: #403d39;
+  margin: 0;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+article .card1, article .card2, article .card3, article .card4 {
+  height: 40vh;
+  margin: 1em 10px 1em 10px;
+  border-style: solid;
+  border-color: #eb5e28;
+}
+
+article p {
+  text-align: center;
+  color: #f0ebd8;
+  font-family: "Heebo", sans-serif;
+  margin: 1em 10px 1em 10px;
+  font-size: 12px;
+}
+
+article h2 {
+  color: #eb5e28;
+  text-align: center;
+  font-size: 18px;
+  margin: 1em 10px 1em 10px;
+}
+
+article div i {
+  color: #252422;
+  font-size: 35px;
+}
+
+/* -------REDES SOCIALES------- */
+.social-media {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-media a i {
+  color: #eb5e28;
+  padding: 5px;
+}
+
+/* -------FOOTER----- */
+footer {
+  background-image: url(images/logo_va.jpg);
+  height: 7vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  border-style: groove;
+  border-color: #eb5e28;
+}
+
+/* ------HOVER------ */
+article.cards .card1:hover,
+article.cards .card2:hover,
+article.cards .card3:hover,
+article.cards .card4:hover {
+  background-color: #f4d35e;
+}
+
+article.cards p:hover {
+  color: #252422;
+}
+
+main h1:hover {
+  color: #f4d35e;
+}
+
+.menu-desplegable li:hover .menu-interior {
+  visibility: visible;
+}
+
+.menu-interior li:hover {
+  background-color: #f0ebd8;
+}
+
+/* ---------RESPONSIVE ---------*/
+@media (max-width: 450px) {
+  .contenedor-principal {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header menu" "main" "section" "article" "article" "footer";
+  }
+  nav.desplegable {
+    display: none;
+  }
+  header {
+    position: absolute;
+    z-index: 3;
+  }
+  header a {
+    margin-top: 10px;
+    color: #eb5e28;
+    position: absolute;
+    visibility: visible;
+  }
+  header a:hover {
+    color: red;
+    background-color: #252422;
+  }
+  #menu {
+    position: relative;
+    top: -50;
+    background-color: #ef7b45;
+    width: 0px;
+    opacity: 0;
+    -webkit-transition: width 0.5s, opacity 0.8s;
+    transition: width 0.5s, opacity 0.8s;
+  }
+  #menu:target {
+    width: 200px;
+    opacity: 95%;
+    z-index: 3;
+  }
+  ul.interior:target {
+    width: 200px;
+    opacity: 95%;
+    z-index: 3;
+  }
+  nav li:hover,
+  .interior li a:hover {
+    color: #f0ebd8;
+  }
+  nav#menu ul, ul.interior {
+    list-style: none;
+    color: #252422;
+    text-decoration: none;
+  }
+  ul.interior li a {
+    list-style: none;
+    color: #252422;
+    text-decoration: none;
+  }
+  .social-media {
+    left: 10px;
+  }
+  footer, .ancla, .ancla2 {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 800px) {
+  .contenedor-principal {
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "nav" "main" "section" "article" "article" "footer";
+  }
+  div.responsive {
+    display: none;
+  }
+  nav.desplegable {
+    padding: 20px 20em 20px 20px;
+  }
+  .social-media {
+    left: 10px;
+  }
+  footer, .ancla2 {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 801px) {
+  div.responsive {
+    display: none;
+  }
+  nav.desplegable {
+    padding: 20px 20em 20px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
